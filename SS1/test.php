@@ -6,28 +6,17 @@
    <body>
    		
        <?php
-       	$x = 10;
-       	$y = 2;
-       	$z = $x + $y;
-       	$t = $x - $y;
-       	$s =$x * $y ;
-       	$d = $x / $y ;
-       		
-       		//echo $z."<br>" ;	// add
-       		//echo $t."<br>" ;	// sub
-       		//echo $s."<br>" ;	// mul
-       		//echo $d."<br>" ; 	//division
-       	function math ($x,$y){
-       		echo "$x * $y";
-       		echo "$x / $y";
-       	}
-       		
+      
+       	function math($x,$y) {
+       		 $z = $x +$y ;
+           return $z ;
+          }
+       		echo math(22,33);
 
        
 
        
-         echo "Bài học PHP đầu tiên <br>";
-         echo strlen("Minh Thông <br>"); 
+       
 
          
          
