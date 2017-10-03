@@ -33,6 +33,7 @@
            
            $count = count($hoten);
            $count = $count - 1;
+           //
            
            if((strlen(strstr($hoten[$count], 'a')) > 0 || strlen(strstr($hoten[$count], 'A'))> 0) && $sinhvien[1] == 'male'){
              print_r($sinhvien);
@@ -56,14 +57,16 @@
            }
          }
          // Cau 5
-         echo "Câu 5 <br>";
+         echo "Câu 5 Sắp xếp danh sách sinh viên theo aphabe : <br>";
          foreach ($arrSinhvien as $sinhvien) {
             $sapxep = explode(' ', $sinhvien[0]);
-             array_pop($sapxep);
-             sort($sapxep);
+            $count = count($sapxep);
+          	$count = $count - 1;
+             ksort($sapxep[$count]);
              print_r($sinhvien);
              
          }
+        
          ?>
    </body>
 </html>
