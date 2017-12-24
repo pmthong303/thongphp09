@@ -2,12 +2,18 @@
 	include ('connect.php');
 
 	
+	if(isset($_GET['id'])){
+		$id=$_GET['id'];
+		$del ="DELETE FROM user WHERE ID = $id ";
+
+		$result = mysqli_query($conn,$del);
 		
-	$del ="DELETE FROM `user` WHERE  `ID`";
-	if (mysqli_query($conn, $del)) {
-    echo "Xóa thành công";
-	} else {
-    echo "Error deleting record: " . mysqli_error($conn);
+		header("Location: select.php");
+		
+		
+
+		
+
 	}
 
 

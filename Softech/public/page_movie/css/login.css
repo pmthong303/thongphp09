@@ -1,0 +1,100 @@
+body {
+	background-color: #622E78;
+}
+.box {
+	background-image:asset('page_movie/images/back.jpg');
+	margin-left: 500px;
+	margin-top: 70px;
+	color: white;
+	width:400px;
+	height: 520px;
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	float: left;
+}
+.box .title p {
+	font-size: 35px;
+	margin-top: 45px;
+}
+.box p {
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.input, .password {
+	float:left;
+	margin-left: 42px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	color: white;
+}
+.box input {
+	float:left;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	/*margin-left: 15px;*/
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	width: 280px;
+	outline: none;
+	letter-spacing: 2px;
+	background: none;
+}
+.input input[type="text"] {
+	color:white;
+}
+input::-webkit-input-placeholder {
+	color: white !important;
+}
+.box button[class="login"] {
+	float:left;
+	padding: 10px 120px 10px 120px;
+	border-radius: 28px;
+	border: none;
+	color: white;
+	background-color: #622E78;
+	margin-left: 38px;
+	margin-top: 30px;
+	cursor: pointer;
+	font-size: 15px;
+	outline: none;
+}
+.box .remember {
+	float:left;
+	margin-left: 130px;
+	padding-top: 25px;
+}
+.box input[type=checkbox] {
+	float: left;
+	width: 30px;	
+}
+.box button[class="register"] {
+	float:left;
+	padding: 10px 120px 10px 120px;
+	border-radius: 28px;
+	border: none;
+	color: white;
+	background-color: #622E78;
+	margin-left: 38px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	outline: none;
+}
+.box .forgot {
+	float:left;
+	margin-top: 50px;
+	margin-left: 110px;
+}
+.box .forgot a {
+	text-decoration: none;
+	color:white;
+}
+.box .click {
+	float:left;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+.box .click a {
+	text-decoration: none;
+	color:white;
+}

@@ -1,0 +1,410 @@
+body {
+	/*background-image: url("images/body-bg.gif");*/
+	background-color: #FFFFFF;
+}
+.container {
+	max-width: 100%;
+	height:1000px;
+}
+#logo img {
+	float:left;
+	width: 20%;
+    height: 20%;
+    margin-left: 200px;
+    margin-top: 15px;
+}
+.search {
+	float:left;
+	padding-top: 60px;
+	width: 400px;
+}
+.search input {
+	border-radius: 12px;
+	border: 2px solid #ccc;
+	width: 250px;
+	height: 25px;
+	background-image: url("public/page_movie/images/icon-search.png");
+	background-repeat: no-repeat;
+	background-position: 300px -9px;
+	padding: 5px 100px 5px 5px;
+	margin-left: 50px;
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	outline: none;
+}
+.toolbar {
+	padding-top: 55px;
+	width:300px;
+	float:right;
+	margin-right: 120px;
+}
+.toolbar button {
+	background-color: rgba(46, 204, 113,1.0);
+	padding: 10px 18px 15px 19px;
+	border-radius: 2px;
+	border: none;
+	margin: 5px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.toolbar button:hover {
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+	transition-duration: 0.9s;
+}
+.navigation {
+	float:right;
+	clear:right;
+	padding-top: 20px;
+	width: 100%;
+}
+.navigation ul {
+	list-style-type: none;
+	margin: -8px;
+	padding: 3px;
+	background-color: #303030;
+	overflow: hidden;
+}
+.navigation ul li {
+	float:left;
+}
+li .nav1, .dropbtn {
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 18px;
+}
+.navigation ul li.active {
+	margin-left: 206px;
+}
+.navi li a:hover {
+	background-color: rgba(236, 240, 241,1.0);
+	color: #009482;
+	transition-duration: 0.7s;
+}
+li dropdown {
+	display: inline-block;
+}
+.dropdown-content {
+	position: absolute;
+	display: none;
+	background-color: #f9f9f9;
+	z-index: 1;
+	min-width: 180px;
+	box-shadow: 0px 14px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown .dropdown-content a:hover {
+	box-shadow:
+        1px 1px blue,
+        2px 2px blue,
+        3px 3px blue;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-5px);
+}
+#main {
+	float:left;
+	margin-top: 30px;
+}
+.categories {
+	border-bottom: 2px solid black;
+	margin-bottom: 15px;
+	margin-left: 58px;
+	height: 30px;
+}
+.categories span:hover {
+	color: red;
+	cursor: pointer;
+}
+.categories .loai {
+	color: red;
+}
+.categories span {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial Bold Italic;
+	color: rgba(52, 73, 94,1.0);
+} 
+.movie {
+	float:left;
+	margin-left: 59px;
+}
+.movie-name p {
+	font-family: Verdana;
+	color: #0B2D6D;
+	font-size: 17px;
+	text-align: center;
+}
+.genres {
+	font-family: Lucida Console;
+	text-align: center;
+	font-size: 15px;
+	margin-top: -10px;
+	padding-bottom: 22px;
+}
+.movie-image img {
+	opacity: 1;
+}
+.movie-image:hover img {
+	-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+	transition-duration: 0.9s;
+}
+.movie p:hover {
+	color: red;
+	cursor: pointer;
+}
+/*Style for detail page*/
+#main .name img {
+	float:left;
+	padding-left: 60px;
+}
+#main .name h3 {
+	font-size: 27px;
+	color: black;
+	font-weight: bold;
+	margin-left: 100px;
+}
+#main .section .image img {
+	float:left;
+	margin-left: 60px;
+	width: 195px;
+	height: 240px;
+	border: 3px solid orange;
+}
+.section {
+	float: left;
+	width: 950px;
+}
+.section .information {
+	float:left;
+	padding-left: 40px;
+	margin-top :-14px;
+	width: 600px;
+}
+.section .information .share a {
+	padding-left: 15px;
+}
+.section .watch, .detail, .comment {
+	float: left;
+	margin-left: 54px;
+}
+.watch .see  {
+	padding-left: 5px;
+}
+.watch .btn {
+	display: inline-block;
+	padding: 10px 25px 10px 25px;
+}
+.see, .trailer {
+	background-color: transparent;
+	color: #F07444;
+	border: 1px solid #F07444;
+}
+.see:hover, .trailer:hover {
+	background-color: #F07444;
+    color: white;    
+    transition: .4s ease;
+    transition-duration: 1s;
+}
+.detail h2 {
+	margin-left: 10px;
+}
+.detail	p {
+	font-family: "Times New Roman", Times, serif;
+}
+.comment {
+	margin-bottom: 15px;
+}
+.comment .box1 .addcomment .btn {
+	display: inline-block;
+	padding: 8px 22px 8px 22px;	
+	float: right;
+	cursor: pointer;
+}
+.comment .box1 .addcomment .add {
+	background-color: #F07444;
+	color: #F07444;
+	border: 1px solid #F07444;
+	color: white;
+	margin-right: 171px;
+}
+.comment .box1 .addcomment .add:hover {
+	background-color: transparent;
+    color: #F07444;
+    transition: .4s ease;
+    transition-duration: 1s;
+}
+.comment .content1 {
+	float:left;
+	margin-top: 15px;
+	border-top: 1px solid silver;
+	padding-top: 15px;
+}
+.comment .frame img{
+	float:left;
+	padding: 0px 8px 2px 0px;
+	margin-top: -4px;
+}
+
+.comment .content1 .frame .name-user {
+	font-size: 20px;
+}
+.comment .content1 .info {
+	float:left;
+}
+.comment .content1 .info .interactive a {
+	text-decoration: none;
+}
+.morecomment {
+	float:left;
+	margin-left: 43%;
+	margin-top: 2%;
+}
+.morecomment .btn {
+	display: inline-block;
+	padding: 8px 22px 8px 22px;	
+	float: right;
+	cursor: pointer;
+}
+.morecomment .more {
+	background-color: #F07444;
+	color: #F07444;
+	border: 1px solid #F07444;
+	color: white;
+}
+.morecomment .more:hover {
+	background-color: transparent;
+    color: #F07444;
+    transition: .4s ease;
+    transition-duration: 1s;
+}
+/*End style of detail page*/
+#footer {
+	float:left;
+	margin-top: 15px;
+}
+.footer-grid {
+	background-color: #282828;
+	float:left;
+	margin: -8px;
+	padding: 0px;
+}
+.footer-one {
+	width: 32%;
+	float:left;
+	padding: 25px 20px 15px 60px;
+}
+.footer-one .me {
+	float:right;
+	color: rgba(149, 165, 166,1.0);
+	margin-top: 15px;
+}
+.footer-two {
+	width: 21%;
+	float:left;
+	padding: 25px 20px 15px 60px;
+}
+.footer-three {
+	width: 21%;
+	float:left;
+	padding: 25px 20px 15px 60px;
+}
+.footer-grid h3 {
+	color:white;
+	margin-top: 10px;
+}
+.footer-grid p {
+	color:rgba(149, 165, 166,1.0);
+	margin-top: 34px;
+}
+.footer-two ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.footer-two ul li {
+	font-size: 14px;
+	display: block;
+	line-height: 1.5em;
+	padding-top: 8px;
+    padding-bottom: 16px;
+}
+.footer-two .footer-ul li a {
+	text-decoration: none;
+}
+.footer-two .footer-ul li a.fb {
+	background-image: url('images/facebook.png');
+	background-repeat: no-repeat;
+	padding: 5px 0 13px 61px;
+	font-size: 17px;
+	color:rgba(149, 165, 166,1.0);
+}
+.footer-two .footer-ul li a.gg {
+	background-image: url('images/google-plus.png');
+	background-repeat: no-repeat;
+	padding: 5px 0 13px 61px;
+	font-size: 17px;
+	color:rgba(149, 165, 166,1.0);
+}
+.footer-two .footer-ul li a.tt {
+	background-image: url('images/twitter.png');
+	background-repeat: no-repeat;
+	padding: 5px 0 13px 61px;
+	font-size: 17px;
+	color:rgba(149, 165, 166,1.0);
+}
+.footer-two .footer-ul li a.ig {
+	background-image: url('images/instagram.png');
+	background-repeat: no-repeat;
+	padding: 5px 0 13px 61px;
+	font-size: 17px;
+	color:rgba(149, 165, 166,1.0);
+}
+.footer-two .footer-ul li a.pt {
+	background-image: url('images/pinterest.png');
+	background-repeat: no-repeat;
+	padding: 5px 0 13px 61px;
+	font-size: 17px;
+	color:rgba(149, 165, 166,1.0);
+}
+.footer-three ul {
+	list-style-type: none;
+	color: rgba(149, 165, 166,1.0);
+	padding: 0px;
+	margin: 0px;
+}
+.footer-three ul li.home {
+	background-image: url('images/home.png');
+	background-repeat: no-repeat;
+	padding: 9px 10px 30px 52px; 
+}
+.footer-three ul li.email {
+	background-image: url('images/email.png');
+	background-repeat: no-repeat;
+	padding: 9px 10px 30px 52px; 
+}
+.footer-three ul li.phone {
+	background-image: url('images/smartphone.png');
+	background-repeat: no-repeat;
+	padding: 9px 10px 30px 52px; 
+}
+.footer-three ul li.location {
+	background-image: url('images/placeholder.png');
+	background-repeat: no-repeat;
+	padding: 9px 10px 30px 52px; 
+}

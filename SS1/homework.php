@@ -33,7 +33,7 @@
            
            $count = count($hoten);
            $count = $count - 1;
-           //
+           
            
            if((strlen(strstr($hoten[$count], 'a')) > 0 || strlen(strstr($hoten[$count], 'A'))> 0) && $sinhvien[1] == 'male'){
              print_r($sinhvien);
